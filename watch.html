@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watching</title>
+    <script src="https://kit.fontawesome.com/b510558ee9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="watch.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <!-- youtube-logo and toggle-button for side-bar -->
+
+        <button class="openMenu menu"><i class="fa-solid fa-bars fa-xl" style="color: #9d9d9d;"></i></button> 
+
+        <a href="youtube.html"><img class="logo" src="yt_logo_rgb_dark.png" alt="youtubeLogo"></a>
+    
+<!-- search bar area -->
+    <form class="search-area">
+        <input class="search-input" type="text" id="searchbar" onkeyup="search_videos()" placeholder="Search" name="search">
+
+       <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #9d9d9d;"></i> </button>
+    </form>
+
+     <div class="mic-icon"><i class="fa-solid fa-microphone fa-xl" style="color: #9d9d9d;"></i></div>
+    
+
+<!-- create, notifications, and profile icons -->
+     <div class="menu-icons">
+     <span class="NC"><i class="fa-solid fa-circle-plus fa-lg" style="color: #9d9d9d;"></i></span>
+        <span class="NC"><i class="fa-regular fa-bell fa-lg" style="color: #9d9d9d;"></i></span>
+     <span class="user"><i class="fa-regular fa-user fa-lg" style="color: #9d9d9d;"></i></span>
+    </div>
+    </header>
+
+    <div class="sector">
+        <section class="overlay">
+            <div class="side-bar">
+                
+                <div class="sideBar-links links">
+
+                     <div class="heading">
+                        <span class="closeMenu"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></span>
+                        <span><img class="logo" src="yt_logo_rgb_light.png" alt="youtubeLogo"></span>
+                        </div>
+
+                        
+                    <a href=""><i class="fa-solid fa-house" style="color: #000000;"></i><span>home</span></a>
+                    <a href="#"><i class="fa-solid fa-bolt" style="color: #000000;"></i><span>shorts</span></a>
+                    <a href="#"><i class="fa-solid fa-bars-progress" style="color: #000000;"></i><span>subscriptions</span></a>
+                    <hr>
+                    <a href="#" class="library"><i class="fa-solid fa-photo-film" style="color: #000000;"></i><span>library</span></a>
+                       
+                   <span class="other-links">
+                   <a href=""><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i><span>History</span></a>
+                   <a href=""><i class="fa-solid fa-clapperboard" style="color: #000000;"></i><span>your videos</span></a>
+                   <a href=""><i class="fa-solid fa-clock" style="color: #000000;"></i><span>watch later</span></a>
+                   <a href=""><i class="fa-solid fa-thumbs-up" style="color: #000000;"></i><span>liked videos</span></a>
+                   <a href=""><i class="fa-solid fa-caret-down" style="color: #000000;"></i><span>show more</span></a>
+                </span>
+                    <hr>
+                </div>
+        
+                <!-- new videos out section, instead of list of subscriptions, this tells the user which of the chaannels
+                     they are subscribed to has released a new video -->
+        
+                <span class="subscribed ">
+                    <div>New Video Out</div>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=40" alt="icon"> chimsom</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=41" alt="icon"> biyo</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=42" alt="icon"> timmy</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=43" alt="icon"> bountifullie</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=44" alt="icon"> kandi</a>
+        
+        
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=45" alt="icon"> nabi</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=46" alt="icon"> babiki</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=47" alt="icon"> mono</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=48" alt="icon"> fays pov</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=49" alt="icon"> web-simplified</a>
+                </span>
+            
+                <span class="subscribed explore">
+                    <hr>
+                    <div>Explore</div>
+                    <a href=""><i class="fa-solid fa-fire-flame-curved" style="color: #000000;"></i> <p>trending</p></a>
+                    <a href=""><i class="fa-solid fa-music" style="color: #000000;"></i> <p>music</p></a>
+                    <a href=""><i class="fa-solid fa-gamepad" style="color: #000000;"></i> <p>gaming</p></a>
+                    <a href=""><i class="fa-solid fa-newspaper" style="color: #000000;"></i><p>news</p></a>
+                    <a href=""><i class="fa-solid fa-trophy" style="color: #000000;"></i> <p>sports</p></a>
+                    
+                  
+                </span>
+        
+                <span class="subscribed explore">
+                    <hr> <br>
+                    <a href=""><i class="fa-solid fa-gear" style="color: #000000;"></i> <p>settings</p></a>
+                    <a href=""><i class="fa-solid fa-flag" style="color: #000000;"></i> <p>report history</p></a>
+                    <a href=""><i class="fa-solid fa-circle-question" style="color: #000000;"></i><p>help</p></a>
+                    <a href=""><i class="fa-solid fa-message" style="color: #000000;"></i><p>send feedback</p></a>
+                  
+                </span>
+            </div>
+        
+           </section>
+    </div>
+
+<div class="static-image">
+    <video src="KSNN4497.MP4" alt="" controls="controls">
+</div>
+
+<div class="lower-section">
+    <div class="leftcolumn">
+        <section class="video-titile">
+            <h3>LEARN TO CREATE MIXES THAT EVERYONE WILL DANCE TO | Beginner friendly!</h3>
+    
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center random=29" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <b><a href="#" class="video-name"> MO-NO</a></b>
+                    <div class="stamps">
+                        <span class="view-count" style="font-size: medium;">220k subscribers</span>
+        
+                    </div>
+                </div>
+    
+        
+    
+                <div class="right-btns">
+                    <div class="butn">subscribe</div>
+                   <div> <button class="like-btns"><i class="fa-regular fa-thumbs-up" style="color: #000000;"></i> 19 | <i class="fa-regular fa-thumbs-down" style="color: #000000;"></i></button>
+                    <button class="share-btn"><i class="fa-regular fa-share-from-square" style="color: #000000;"></i> share</button></div>
+                </div>
+            </div>
+    
+            <div class="video-des">
+                <p class="video-text"><b>131 views  Aug 8, 2023</b>  #soundenginner #beginner #mono <br>
+                    Hey guys in today’s video, i’ll be showing you guys how i create mixes using FX studio i hope you <b>...show more</b></p>
+                    
+            </div>
+        </section>
+<br>
+        <article class="comments">
+            <div class="sort">
+                56 comments  &nbsp;&nbsp; &nbsp;  <i class="fa-solid fa-bars-staggered" style="color: #000000;"></i> &nbsp;&nbsp; &nbsp; sort by
+                
+            </div>
+
+            <div class="comment-section">
+
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <input type="text" name="" id="" placeholder="Add a comment...">
+            </div>
+
+            <div class="old-comments">
+                <img src="https://unsplash.it/36/36?gravity=center random=88" alt="icon" class="channel-icon">
+                <div>
+                    <h3>@Babiki <span>13 hours ago</span></h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, possimus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Quisquam assumenda illum aperiam sapiente animi quibusdam in voluptate fugiat eaque ipsam!
+                    </p>
+                    <div class="coment-action">
+                        <i class="fa-regular fa-thumbs-up fa-lg" style="color: #000000;"></i>  &nbsp; <i class="fa-regular fa-thumbs-down fa-lg" style="color: #000000;"></i>
+                         &nbsp;<span>Reply</span>
+                    </div>
+                </div>
+            </div>
+            <div class="old-comments">
+                <img src="https://unsplash.it/36/36?gravity=center random=81" alt="icon" class="channel-icon">
+                <div>
+                    <h3>@Sully <span>12 hours ago</span></h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, possimus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Quisquam assumenda illum aperiam sapiente animi quibusdam in voluptate fugiat eaque ipsam!
+                    </p>
+                    <div class="coment-action">
+                        <i class="fa-regular fa-thumbs-up fa-lg" style="color: #000000;"></i>  &nbsp; <i class="fa-regular fa-thumbs-down fa-lg" style="color: #000000;"></i>
+                         &nbsp;<span>Reply</span>
+                    </div>
+                </div>
+            </div>
+            <div class="old-comments">
+                <img src="https://unsplash.it/36/36?gravity=center random=82" alt="icon" class="channel-icon">
+                <div>
+                    <h3>@Ricky <span>10 hours ago</span></h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, possimus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         
+                    </p>
+                    <div class="coment-action">
+                        <i class="fa-regular fa-thumbs-up fa-lg" style="color: #000000;"></i>  &nbsp; <i class="fa-regular fa-thumbs-down fa-lg" style="color: #000000;"></i>
+                         &nbsp;<span>Reply</span>
+                    </div>
+                </div>
+            </div>
+            <div class="old-comments">
+                <img src="https://unsplash.it/36/36?gravity=center random=83" alt="icon" class="channel-icon">
+                <div>
+                    <h3>@Connie445 <span>9 hours ago</span></h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, possimus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Quisquam assumenda illum aperiam sapiente animi quibusdam in voluptate fugiat eaque ipsam!
+                    </p>
+                    <div class="coment-action">
+                        <i class="fa-regular fa-thumbs-up fa-lg" style="color: #000000;"></i>  &nbsp; <i class="fa-regular fa-thumbs-down fa-lg" style="color: #000000;"></i>
+                         &nbsp;<span>Reply</span>
+                    </div>
+                </div>
+            </div>
+            <div class="old-comments">
+                <img src="https://unsplash.it/36/36?gravity=center random=84" alt="icon" class="channel-icon">
+                <div>
+                    <h3>@IcecreamLover225 <span>6 hours ago</span></h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, possimus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Quisquam assumenda illum aperiam sapiente animi quibusdam in voluptate fugiat eaque ipsam!
+                    </p>
+                    <div class="coment-action">
+                        <i class="fa-regular fa-thumbs-up fa-lg" style="color: #000000;"></i>  &nbsp; <i class="fa-regular fa-thumbs-down fa-lg" style="color: #000000;"></i>
+                         &nbsp;<span>Reply</span>
+                    </div>
+                </div>
+            </div>
+            <div class="old-comments">
+                <img src="https://unsplash.it/36/36?gravity=center random=86" alt="icon" class="channel-icon">
+                <div>
+                    <h3>@Mxer784 <span>4 hours ago</span></h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, possimus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Quisquam assumenda illum aperiam sapiente animi quibusdam in voluptate fugiat eaque ipsam!
+                    </p>
+                    <div class="coment-action">
+                        <i class="fa-regular fa-thumbs-up fa-lg" style="color: #000000;"></i>  &nbsp; <i class="fa-regular fa-thumbs-down fa-lg" style="color: #000000;"></i>
+                         &nbsp;<span>Reply</span>
+                    </div>
+                </div>
+            </div>
+            <div class="old-comments">
+                <img src="https://unsplash.it/36/36?gravity=center random=87" alt="icon" class="channel-icon">
+                <div>
+                    <h3>@Jake <span>10 minutes ago</span></h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, possimus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Quisquam assumenda illum aperiam sapiente animi quibusdam in voluptate fugiat eaque ipsam!
+                    </p>
+                    <div class="coment-action">
+                        <i class="fa-regular fa-thumbs-up fa-lg" style="color: #000000;"></i>  &nbsp; <i class="fa-regular fa-thumbs-down fa-lg" style="color: #000000;"></i>
+                         &nbsp;<span>Reply</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <aside class="suggested ">
+        
+        <div class="rightcolumn">
+            <img class="advert" src="https://unsplash.it/550/150?gravity=center random=99" alt="thumbnail" class="thumbnail-img" >
+            <nav class="filters">
+                <div class="cover">
+                  <button class="left-arrow"> <!-- scroll left button -->
+                      <i class="fa-solid fa-chevron-left" style="color: #000000;"></i>
+                  </button>
+                  <section class="filters-section">
+                      <button class="filter active">All</button>
+                      <button class="filter">lifestyle</button>
+                      <button class="filter">food</button>
+                      <button class="filter">web development</button>
+                      <button class="filter">shopping</button>
+                      <button class="filter">blessings</button>
+                      <button class="filter">university</button>
+                      <button class="filter">motivation</button>
+                      <button class="filter">anime</button>
+                      <button class="filter">vlogs</button>
+                      <button class="filter">DIY</button>
+                      <button class="filter">podcast</button>
+                      <button class="filter">javascript</button>
+                      <button class="filter">documentries</button>
+                      <button class="filter">true-crime</button>
+                      <button class="filter">reality tv</button>
+                      <button class="filter">shorts</button>
+                      <button class="filter">crochet</button>
+                      <button class="filter">study skills</button>
+                      <button class="filter">watched</button>
+                      <button class="filter">recently uploaded</button>
+                      <button class="filter">new to you</button>
+                      
+                  </section>
+                  <button class="right-arrow"> <!-- scroll right button -->
+                      <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+                  </button>
+                </div>
+              </nav>
+            <article class="video-container">
+                
+               <div>
+                <a href="#" class="thumbnail" data-duration ="25:22">
+
+                    <img src="https://unsplash.it/250/150?gravity=center random=91" alt="thumbnail" class="thumbnail-img" >
+
+                     <span class="video-info">
+                        
+                        <h4 style="color: black;">SHOP WITH ME</h4> 
+                        <p>Biyo</p>
+                        <p>220k views
+                            •
+                            2 weeks ago</p>
+                    </span>
+                </a>
+               </div>
+                
+    
+                <!-- video details -->
+    
+                <div class="video-bottom">
+                    
+                </div>
+            </article>
+            <article class="video-container">
+                
+                <div>
+                 <a href="#" class="thumbnail" data-duration ="25:22">
+ 
+                     <img src="https://unsplash.it/250/150?gravity=center random=92" alt="thumbnail" class="thumbnail-img" >
+ 
+                      <span class="video-info">
+                         
+                         <h4 style="color: black;">A KARIMO MARKET VLOG</h4> 
+                         <p>Biyo</p>
+                         <p>220k views
+                             •
+                             2 weeks ago</p>
+                     </span>
+                 </a>
+                </div>
+                 
+     
+                 <!-- video details -->
+     
+                 <div class="video-bottom">
+                     
+                 </div>
+             </article>
+             <article class="video-container">
+                
+                <div>
+                 <a href="#" class="thumbnail" data-duration ="25:22">
+ 
+                     <img src="https://unsplash.it/250/150?gravity=center random=93" alt="thumbnail" class="thumbnail-img" >
+ 
+                      <span class="video-info">
+                         
+                         <h4 style="color: black;">THE GOODNESS OF GOD</h4> 
+                         <p>Biyo</p>
+                         <p>220k views
+                             •
+                             2 weeks ago</p>
+                     </span>
+                 </a>
+                </div>
+                 
+     
+                 <!-- video details -->
+     
+                 <div class="video-bottom">
+                     
+                 </div>
+             </article>
+             <article class="video-container">
+                
+                <div>
+                 <a href="#" class="thumbnail" data-duration ="25:22">
+ 
+                     <img src="https://unsplash.it/250/150?gravity=center random=94" alt="thumbnail" class="thumbnail-img" >
+ 
+                      <span class="video-info">
+                         
+                         <h4 style="color: black;">WATCH ME REACT TO MY WAEC RESULTS</h4> 
+                         <p>Biyo</p>
+                         <p>220k views
+                             •
+                             2 weeks ago</p>
+                     </span>
+                 </a>
+                </div>
+                 
+     
+                 <!-- video details -->
+     
+                 <div class="video-bottom">
+                     
+                 </div>
+             </article>
+             <article class="video-container">
+                
+                <div>
+                 <a href="#" class="thumbnail" data-duration ="25:22">
+ 
+                     <img src="https://unsplash.it/250/150?gravity=center random=95" alt="thumbnail" class="thumbnail-img" >
+ 
+                      <span class="video-info">
+                         
+                         <h4 style="color: black;">TALLEST BUILDING IN THE WORLD!</h4> 
+                         <p>Biyo</p>
+                         <p>220k views
+                             •
+                             2 weeks ago</p>
+                     </span>
+                 </a>
+                </div>
+                 
+     
+                 <!-- video details -->
+     
+                 <div class="video-bottom">
+                     
+                 </div>
+             </article>
+             <article class="video-container">
+                
+                <div>
+                 <a href="#" class="thumbnail" data-duration ="25:22">
+ 
+                     <img src="https://unsplash.it/250/150?gravity=center random=96" alt="thumbnail" class="thumbnail-img" >
+ 
+                      <span class="video-info">
+                         
+                         <h4 style="color: black;">SHOP WITH ME</h4> 
+                         <p>Biyo</p>
+                         <p>220k views
+                             •
+                             2 weeks ago</p>
+                     </span>
+                 </a>
+                </div>
+                 
+     
+                 <!-- video details -->
+     
+                 <div class="video-bottom">
+                     
+                 </div>
+             </article>
+             <article class="video-container">
+                 
+                 <div>
+                  <a href="#" class="thumbnail" data-duration ="25:22">
+  
+                      <img src="https://unsplash.it/250/150?gravity=center random=97" alt="thumbnail" class="thumbnail-img" >
+  
+                       <span class="video-info">
+                          
+                          <h4 style="color: black;">A WEEK IN MALTA| ATTENDED A WEDDING</h4> 
+                          <p>Biyo</p>
+                          <p>220k views
+                              •
+                              2 weeks ago</p>
+                      </span>
+                  </a>
+                 </div>
+                  
+      
+                  <!-- video details -->
+      
+                  <div class="video-bottom">
+                      
+                  </div>
+              </article>
+              <article class="video-container">
+                 
+                 <div>
+                  <a href="#" class="thumbnail" data-duration ="25:22">
+  
+                      <img src="https://unsplash.it/250/150?gravity=center random=100" alt="thumbnail" class="thumbnail-img" >
+  
+                       <span class="video-info">
+                          
+                          <h4 style="color: black;">SHOP WITH ME</h4> 
+                          <p>Biyo</p>
+                          <p>220k views
+                              •
+                              2 weeks ago</p>
+                      </span>
+                  </a>
+                 </div>
+                  
+      
+                  <!-- video details -->
+      
+                  <div class="video-bottom">
+                      
+                  </div>
+              </article>
+              <article class="video-container">
+                 
+                 <div>
+                  <a href="#" class="thumbnail" data-duration ="25:22">
+  
+                      <img src="https://unsplash.it/250/150?gravity=center random=33" alt="thumbnail" class="thumbnail-img" >
+  
+                       <span class="video-info">
+                          
+                          <h4 style="color: black;">SHOP WITH ME</h4> 
+                          <p>Biyo</p>
+                          <p>220k views
+                              •
+                              2 weeks ago</p>
+                      </span>
+                  </a>
+                 </div>
+                  
+      
+                  <!-- video details -->
+      
+                  <div class="video-bottom">
+                      
+                  </div>
+              </article>
+              <article class="video-container">
+                 
+                 <div>
+                  <a href="#" class="thumbnail" data-duration ="25:22">
+  
+                      <img src="https://unsplash.it/250/150?gravity=center random=61" alt="thumbnail" class="thumbnail-img" >
+  
+                       <span class="video-info">
+                          
+                          <h4 style="color: black;">SHOP WITH ME</h4> 
+                          <p>Biyo</p>
+                          <p>220k views
+                              •
+                              2 weeks ago</p>
+                      </span>
+                  </a>
+                 </div>
+                  
+      
+                  <!-- video details -->
+      
+                  <div class="video-bottom">
+                      
+                  </div>
+              </article>
+          </div>
+
+    </aside>
+</div>
+
+
+
+</style>
+<script>
+// Optional: Use JavaScript to dynamically adjust zoom based on screen width
+window.addEventListener('resize', function () {
+    if (window.innerWidth <= 699) { // Adjust the threshold as needed
+        document.body.style.zoom = 0.6; // Adjust the zoom level as needed
+    } else {
+        document.body.style.zoom = 1;
+    }
+});
+</script>
+<button onclick="topFunction()" id="Topbtn" title="Go to top"><i class="fa-solid fa-arrow-up" style="color: #000000;"></i></button>
+
+<script>
+    // create and declare btn
+    let mybutton = document.getElementById("Topbtn");
+    
+    // When the user scrolls 20px from the top, button becomes visible
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+    </script>
+    <script src="watch.js"></script>
+</body>
+</html>

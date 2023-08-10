@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/b510558ee9.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube 'The Clone'</title>
+    <link rel="stylesheet" href="youtube.css">
+   
+</head>
+<body>
+    
+
+   <header class="header">
+<!-- youtube-logo and toggle-button for side-bar -->
+            <span class="menu"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></span>
+
+            <button class="openMenu"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></button> 
+
+            <img class="logo" src="yt_logo_rgb_light.png" alt="youtubeLogo">
+        
+<!-- search bar area -->
+        <form class="search-area">
+            <input class="search-input" type="text" id="searchbar" onkeyup="search_videos()" placeholder="Search" name="search">
+
+           <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i> </button>
+        </form>
+
+         <div class="mic-icon"><i class="fa-solid fa-microphone fa-xl" style="color: #000000;"></i></div>
+        
+
+<!-- create, notifications, and profile icons -->
+         <div class="menu-icons">
+         <span class="NC"><i class="fa-solid fa-circle-plus fa-lg" style="color: #000000;"></i> </span>
+            <span class="NC"><i class="fa-regular fa-bell fa-lg" style="color: #000000;"></i></span>
+         <span class="user"><i class="fa-regular fa-user fa-lg" style="color: #000000;"></i></span>
+        </div>
+    </header>
+
+    <!--side-bar-->
+
+   
+    <div class="sector">
+        <section>
+            <div class="side-bar">
+                
+                <div class="sideBar-links links">
+
+                     <div class="heading">
+                        <span class="closeMenu"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></span>
+                        <span><img class="logo" src="yt_logo_rgb_light.png" alt="youtubeLogo"></span>
+                        </div>
+
+                        
+                    <a href="" ><i class="fa-solid fa-house" style="color: #000000;"></i> <span>home</span></a>
+                    <a href="#"><i class="fa-solid fa-bolt" style="color: #000000;"></i><span>shorts</span></a>
+                    <a href="sub.html"><i class="fa-solid fa-bars-progress" style="color: #000000;"></i><span>subscriptions</span></a>
+                    <hr>
+                    <a href="#" class="library"><i class="fa-solid fa-photo-film" style="color: #000000;"></i><span>library</span></a>
+                       
+                   <span class="other-links">
+                   <a href=""><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i><span>History</span></a>
+                   <a href=""><i class="fa-solid fa-clapperboard" style="color: #000000;"></i><span>your videos</span></a>
+                   <a href=""><i class="fa-solid fa-clock" style="color: #000000;"></i><span>watch later</span></a>
+                   <a href=""><i class="fa-solid fa-thumbs-up" style="color: #000000;"></i><span>liked videos</span></a>
+
+                   <a href="" class="show-more"><i class="fa-solid fa-caret-down" style="color: #000000;"></i><span>show more</span></a>
+                </span>
+                    <hr>
+                </div>
+        
+                <!-- new videos out section, instead of list of subscriptions, this tells the user which of the chaannels
+                     they are subscribed to has released a new video -->
+        
+                <span class="subscribed ">
+                    <div>New Video Out</div>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=40" alt="icon"> chimsom</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=41" alt="icon"> biyo</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=42" alt="icon"> timmy</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=43" alt="icon"> bountifullie</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=44" alt="icon"> kandi</a>
+        
+        
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=45" alt="icon"> nabi</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=46" alt="icon"> babiki</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=47" alt="icon"> mono</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=48" alt="icon"> fays pov</a>
+                    <a href=""><img src="https://unsplash.it/36/36?gravity=center random=49" alt="icon"> web-simplified</a>
+                </span>
+            
+                <span class="subscribed explore">
+                    <hr>
+                    <div>Explore</div>
+                    <a href=""><i class="fa-solid fa-fire-flame-curved" style="color: #000000;"></i> <p>trending</p></a>
+                    <a href=""><i class="fa-solid fa-music" style="color: #000000;"></i> <p>music</p></a>
+                    <a href=""><i class="fa-solid fa-gamepad" style="color: #000000;"></i> <p>gaming</p></a>
+                    <a href=""><i class="fa-solid fa-newspaper" style="color: #000000;"></i><p>news</p></a>
+                    <a href=""><i class="fa-solid fa-trophy" style="color: #000000;"></i> <p>sports</p></a>
+                    
+                  
+                </span>
+        
+                <span class="subscribed explore">
+                    <hr> <br>
+                    <a href=""><i class="fa-solid fa-gear" style="color: #000000;"></i> <p>settings</p></a>
+                    <a href=""><i class="fa-solid fa-flag" style="color: #000000;"></i> <p>report history</p></a>
+                    <a href=""><i class="fa-solid fa-circle-question" style="color: #000000;"></i><p>help</p></a>
+                    <a href=""><i class="fa-solid fa-message" style="color: #000000;"></i><p>send feedback</p></a>
+                  
+                </span>
+            </div>
+        
+           </section>
+    </div>
+   
+
+
+
+<!-- main section -->
+
+<div class="videos" id="videos">
+
+    <!-- filter buttons to filter the content of the page -->
+
+    <nav class="filters">
+        <div class="cover">
+          <button class="left-arrow"> <!-- scroll left button -->
+              <i class="fa-solid fa-chevron-left" style="color: #000000;"></i>
+          </button>
+          <section class="filters-section">
+              <button class="filter active">All</button>
+              <button class="filter">lifestyle</button>
+              <button class="filter">food</button>
+              <button class="filter">web development</button>
+              <button class="filter">shopping</button>
+              <button class="filter">blessings</button>
+              <button class="filter">university</button>
+              <button class="filter">motivation</button>
+              <button class="filter">anime</button>
+              <button class="filter">vlogs</button>
+              <button class="filter">DIY</button>
+              <button class="filter">podcast</button>
+              <button class="filter">javascript</button>
+              <button class="filter">documentries</button>
+              <button class="filter">true-crime</button>
+              <button class="filter">reality tv</button>
+              <button class="filter">shorts</button>
+              <button class="filter">crochet</button>
+              <button class="filter">study skills</button>
+              <button class="filter">watched</button>
+              <button class="filter">recently uploaded</button>
+              <button class="filter">new to you</button>
+              
+          </section>
+          <button class="right-arrow"> <!-- scroll right button -->
+              <i class="fa-solid fa-chevron-right" style="color: #000000;"></i>
+          </button>
+        </div>
+      </nav>
+      
+      <!-- home page video section -->
+     
+    <section class="video-section noTop" id="list">
+        <article class="video-container">
+            <a href="watch.html" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/250/150?gravity=center random=1" alt="thumbnail" class="thumbnail-img" >
+            </a>
+
+            <!-- video details -->
+
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/250/150?gravity=center random=2" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The happiness of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html"class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/250/150?gravity=center random=3" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The glory of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/250/150?gravity=center random=4" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The joy of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html"class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/250/150?gravity=center random=5" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html"" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/250/150?gravity=center random=6" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html"class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/250/150?gravity=center random=5" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/250/150?gravity=center random=6" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+    </section>
+    <section class="video-section theShort">
+
+<!-- shorts video section -->
+<h2 class="video-section-title">
+    <span style="display: flex; justify-content: flex-end;"><img src="https://www.freepnglogos.com/uploads/youtube-shorts-logo-png/youtube-shorts-icon-transparent-11.png" width="50" alt="youtube shorts icon transparent" /><h4>Shorts</h4></span>
+    
+    <button class="close closeToggle"><i class="fa-solid fa-times" style="color: #000000;"></i></button>
+</h2>
+        
+
+        <section class="shorts">
+            <article class="video-container">
+                <a href="#" class="thumbnail">
+                    <img src="https://unsplash.it/300/500?gravity=center random=75" alt="thumbnail" class="thumbnail-img" >
+                </a>
+                <div class="video-bottom">
+                    <div class="video-details">
+                        <a href="#" class="video-name short"> The beauty of it all</a>
+                        <div class="stamps">
+                            <span class="view-count short">220k views</span>
+                
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="#" class="thumbnail">
+                    <img src="https://unsplash.it/300/500?gravity=center random=74" alt="thumbnail" class="thumbnail-img" >
+                </a>
+                <div class="video-bottom">
+                    <div class="video-details">
+                        <a href="#" class="video-name short"> The beauty of it all</a>
+                        <div class="stamps">
+                            <span class="view-count short">220k views</span>
+                
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="#" class="thumbnail">
+                    <img src="https://unsplash.it/300/500?gravity=center random=73" alt="thumbnail" class="thumbnail-img" >
+                </a>
+                <div class="video-bottom">
+                    <div class="video-details">
+                        <a href="#" class="video-name short"> The beauty of it all</a>
+                        <div class="stamps">
+                            <span class="view-count short">220k views</span>
+                
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="#" class="thumbnail">
+                    <img src="https://unsplash.it/300/500?gravity=center random=72" alt="thumbnail" class="thumbnail-img" >
+                </a>
+                <div class="video-bottom">
+                    <div class="video-details">
+                        <a href="#" class="video-name short"> The beauty of it all</a>
+                        <div class="stamps">
+                            <span class="view-count short">220k views</span>
+                
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="#" class="thumbnail">
+                    <img src="https://unsplash.it/300/500?gravity=center random=71" alt="thumbnail" class="thumbnail-img" >
+                </a>
+                <div class="video-bottom">
+                    <div class="video-details">
+                        <a href="#" class="video-name short"> The beauty of it all</a>
+                        <div class="stamps">
+                            <span class="view-count short">220k views</span>
+                
+                        </div>
+                    </div>
+                </div>
+
+            
+            
+        </section>
+        
+        
+           
+    </section>
+
+    <section class="video-section">
+        <article class="video-container">
+            <a href="watch.html" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/800/450?gravity=center random=7" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/800/450?gravity=center random=8" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/800/450?gravity=center random=9" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/800/450?gravity=center random=10" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/800/450?gravity=center random=11" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html"class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/800/450?gravity=center random=12" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html" class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/800/450?gravity=center random=11" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="video-container">
+            <a href="watch.html"class="thumbnail" data-duration ="25:22">
+                <img src="https://unsplash.it/800/450?gravity=center random=12" alt="thumbnail" class="thumbnail-img" >
+            </a>
+            <div class="video-bottom">
+                <img src="https://unsplash.it/36/36?gravity=center" alt="icon" class="channel-icon">
+                <div class="video-details">
+                    <a href="#" class="video-name"> The beauty of it all</a>
+                    <a href="" class="channel-name">Biyo</a>
+                    <div class="stamps">
+                        <span class="view-count">220k views</span>
+                        •
+                        <span class="date">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+    </section>
+</div>
+<button onclick="topFunction()" id="Topbtn" title="Go to top"><i class="fa-solid fa-arrow-up" style="color: #000000;"></i></button>
+
+<script>
+    // create and declare btn
+    let mybutton = document.getElementById("Topbtn");
+    
+    // When the user scrolls 20px from the top, button becomes visible
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+    </script>
+
+    <script src="youtube.js"></script>
+
+     <script src="overlay.js"></script> 
+</body> 
+</html>
